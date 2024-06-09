@@ -1,0 +1,422 @@
+CSS Cheat Sheet
+
+
+A.What is CSS ?
+ Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
+ CSS provides a way to style HTML elements and create visually appealing web pages. CSS is widely used in web development and
+ is a key tool for creating responsive and dynamic web pages.
+
+
+B. Basic Syntax
+
+CSS Selector    	       Description
+
+*	                       Selects all elements
+element	                   Selects all elements of a specific type
+.class	                   Selects all elements with a specific class
+#id	                       Selects the element with a specific ID
+selector1, selector2	   Selects all elements that match either selector1 or selector2
+selector1 selector2	       Selects all elements that match selector2 and are descendants of elements that match selector1
+selector1 > selector2	   Selects all elements that match selector2 and are direct children of elements that match selector1
+selector1 + selector2	   Selects the element that immediately follows selector1 and matches selector2
+selector1 ~ selector2	   Selects all elements that follow selector1 and match selector2
+
+
+C.CSS Style :-
+
+1. Selectors
+
+Universal Selector * {}
+
+Type Selector h1, h2 ,h3 {}
+
+Child Selector ul > li {}
+
+Descendant Selector p a {}
+
+Class Selector .class {}
+
+ID Selector #id {}
+
+Adjacent Sibling Selector h1 + p {}
+
+General Sibling Selector h1 ~ p {}
+
+Attribute Selector [attribute="SomeValue"] {}
+
+
+
+2. Selectors & Elements
+ 
+Mouse Over Selector a:hover {}
+
+Active Link Selector a:active {}
+
+Focus Selector input:focus {}
+
+Visited Links Selector a:visited {}
+
+Link Selector .class:link {}
+
+First Line Selector p::first-line {}
+
+First Letter Selector p::first-letter {}
+
+First Child Selector p:first-child {}
+
+Last Child Selector p:last-child {}
+
+Only Child Selector p:only-child {}
+
+:nth-child Selector p:nth-child() {}
+
+First Element of its Parent Selector p:first-of-type {}
+
+Checked elements selector input:checked {}
+
+Disabled elements selector input:disabled {}
+
+Enabled elements selector input:enabled {}
+
+Elements that have no Children Selector (including text nodes) p:empty {}
+
+Not a Specified Element Selector :not(p) {}
+
+Before Element .class::before {}
+
+After Element .class::before {}
+
+
+3. Text Styling
+
+meaning of style :-
+
+Property	                      Description
+color:                            Sets the color of text
+font-size:                        Sets the size of text
+font-weight:                      Sets the weight of text (e.g. bold)
+font-style:	                      Sets the style of text (e.g. italic)
+text-align:	                      Sets the alignment of text
+text-decoration:                  Sets the decoration of text (e.g. underline)
+text-transform::                  Sets the case of text (e.g. uppercase)
+line-height:                      Sets the height of a line of text
+letter-spacing:	                  Sets the spacing between letters
+word-spacing:                     Sets the spacing between words
+white-space:                      Sets how white space is handled
+text-shadow:                      Adds a shadow to text
+
+
+using of style :-
+
+Font style font-style: normal | italic | oblique
+
+Font Variant font-variant: normal | small-caps
+
+Font Weight font-weight: normal | bold | bolder | lighter | 100 - 900
+
+Vertical Alignment vertical-align: baseline | 10px | sub | super | top | text-top | middle | bottom | text-bottom | initial
+
+Font Size font-size: 12px | 0.8em | 80%
+
+Text Transform text-transform: capitalise | lowercase | uppercase
+
+Space Between Characters letter-spacing: normal | 4px
+
+Line Height line-height: normal | 3em | 34%
+
+Horizontal Alignment text-align: left | right | center | justify
+
+Text Align Last text-align-last: auto | left | right | center | justify | start | end | initial | inherit
+
+Text Decoration text-decoration: none | underline | overline | line-through
+
+Indent First Line text-indent: 25px
+
+Font Family font-family: 'Open Sans', sans-serif
+
+Text Justify text-justify: auto | inter-word | inter-character | none | initial | inherit
+
+Text Overflow text-overflow: clip | ellipsis | string | initial | inherit
+
+Text Shadow text-shadow: h-shadow v-shadow blur-radius color | none | initial | inherit
+
+
+4. Position
+
+meaning of style:-
+
+Property	                      Description
+position	                Specifies the type of positioning used for an element
+top     	                Sets the distance between the top edge of an element and the top edge of its containing element
+bottom.	                    Sets the distance between the bottom edge of an element and the bottom edge of its containing element
+left	                    Sets the distance between the left edge of an element and the left edge of its containing element
+right                   	Sets the distance between the right edge of an element and the right edge of its containing element
+z-index	                    Sets the stacking order of elements
+float                   	Specifies whether or not an element should float
+clear                   	Specifies which sides of an element other floating elements are not allowed
+Position position:          static | relative | absolute | fixed | sticky
+
+using of style:-
+
+Position Properties top | right | bottom | left
+
+Float Element float: left | right | none
+
+Clear Floating Elements clear: none | left | right | both
+
+Z Index z-index: 3 | auto | inherit
+
+
+5. Background
+
+meaning of style:-
+
+Property	                    Description
+background-color	            Sets the color of an element’s background
+background-image	            Sets an image as an element’s background
+background-repeat	            Sets how an element’s background image is repeated
+background-position	            Sets the position of an element’s background image
+background-size	                Sets the size of an element’s background image
+background-attachment	        Sets whether an element’s background image scrolls with the page or is fixed
+
+using of style:-
+
+Background Image background-image: url()
+
+Background Repeat background-repeat: repeat-x | repeat-y | repeat | space | round | no-repeat
+
+Background Color background-color: #2AA9E0
+
+Background Position background-position: top | right | bottom | left | center
+
+Background Attachment background-attachment: scroll | fixed | local | initial | inherit
+
+
+6. Box properties
+
+meaning of style :-
+
+Property	        Description
+width	            Sets the width of an element
+height          	Sets the height of an element
+margin          	Sets the margin of an element
+margin-top      	Sets the top margin of an element
+margin-right	    Sets the right margin of an element
+margin-bottom	    Sets the bottom margin of an element
+margin-left	        Sets the left margin of an element
+padding         	Sets the padding of an element
+padding-top	        Sets the top padding of an element
+padding-right	    Sets the right padding of an element
+padding-bottom	    Sets the bottom padding of an element
+padding-left	    Sets the left padding of an element
+border	            Sets the border of an element
+border-top	        Sets the top border of an element
+border-right	    Sets the right border of an element
+border-bottom	    Sets the bottom border of an element
+border-left     	Sets the left border of an element
+border-width	    Sets the width of a border
+border-style	    Sets the style of a border
+border-color	    Sets the color of a border
+border-radius	    Sets the radius of a border
+box-sizing	        Sets the box model for an element
+overflow	        Sets how content that overflows an element is handled
+display         	Sets the display style of an element
+visibility	        Sets the visibility of an element
+
+using of style :-
+
+Box Sizing box-sizing: border-box | content-box
+
+Margin margin: 2px 4px 6px 8px | 0 auto
+
+Padding padding: 2px 4px 6px 8px
+
+Border Color border-color: #2AA9E0
+
+Border Style border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
+
+Border Width border-width: 10px
+
+
+7. List Styling
+
+List Type list-style-type: disc | circle | square | none
+
+List Position list-style-position: inside | outside
+
+List Image list-style-image: url()
+
+
+8. Flexbox
+
+meaning of style:-
+
+Property	                    Description
+display: flex	                Sets an element as a flex container
+flex-direction	                Sets the direction of the flex container
+justify-content	                Sets the alignment of flex items along the main axis
+align-items	                    Sets the alignment of flex items along the cross axis
+flex-wrap	                    Sets whether flex items should wrap
+align-content	                Sets the alignment of flex lines along the cross axis
+flex	                        Sets the flexible size of a flex item
+order	                        Sets the order of a flex item
+align-self	                    Sets the alignment of a single flex item along the cross axis
+
+using of style:-
+
+display:flex
+
+Flex Direction flex-direction: row | row-reverse | column | column-reverse
+
+Flex Wrap flex-wrap: nowrap | wrap | wrap-reverse
+
+Justify Content justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+
+Align Items align-items: flex-start | flex-end | center | baseline | stretch
+
+Align Content align-content: flex-start | flex-end | center | space-between | space-around | stretch
+
+Order order: 0
+
+Flex Grow flex-grow: 0
+
+Flex Shrink flex-shrink: 1
+
+Flex Basis flex-basis: 3px | auto
+
+Align Self align-self: auto | flex-start | flex-end | center | baseline | stretch
+
+
+9. CSS Grid
+
+meaning of style :-
+
+Property	                         Description
+display: grid	                     Sets an element as a grid container
+grid-template-columns	             Sets the width of each column in the grid
+grid-template-rows	                 Sets the height of each row in the grid
+grid-template-areas	                 Sets the position of grid items using named grid areas
+grid-column-gap	                     Sets the gap between columns in the grid
+grid-row-gap	                     Sets the gap between rows in the grid
+grid-gap	                         Sets the gap between rows and columns in the grid
+grid-auto-columns	                 Sets the width of columns that aren’t explicitly sized in the grid
+grid-auto-rows	                     Sets the height of rows that aren’t explicitly sized in the grid
+grid-auto-flow	                     Sets the flow of grid items that aren’t explicitly placed in the grid
+grid-row-start	                     Sets the starting row position of a grid item
+grid-row-end	                     Sets the ending row position of a grid item
+grid-column-start	                 Sets the starting column position of a grid item
+grid-column-end	                     Sets the ending column position of a grid item
+grid-area	                         Sets the grid item’s position using the grid-row-start, grid-row-end, grid-column-start, and grid-column-end properties
+
+using of style:-
+
+display: grid
+
+Grid Template Columns grid-template-columns: 40px 50px auto 50px 40px
+
+Grid Template Rows grid-template-rows: 25% 100px auto
+
+Grid Template Areas grid-template-areas: "a b c" | none
+
+Grid Template grid-template: "a a a" 20% "b b b" auto | 100px 1fr / 50px 1fr
+
+Grid Column Gap grid-column-gap: 10px
+
+Grid Row Gap grid-row-gap: 10px
+
+Justify Items justify-items: start | end | center | stretch
+
+Align Items align-items: start | end | center | stretch
+
+Justify Content justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+
+Align Content align-content: flex-start | flex-end | center | space-between | space-around | stretch
+
+Grid Auto Columns grid-auto-columns: 100px | max-content | min-content
+
+Grid Auto Rows grid-auto-rows: 100px | max-content | min-content
+
+Grid Auto Flow grid-auto-flow: row | column | row dense | column dense
+
+Grid Column Start grid-column-start: 2 | areaname | span 2 | span areaname | auto
+
+Grid Column End grid-column-end: 2 | areaname | span 2 | span areaname | auto
+
+Grid Row Start grid-row-start: 2 | areaname | span 2 | span areaname | auto
+
+Grid Row End grid-row-end: 2 | areaname | span 2 | span areaname | auto
+
+Grid Column grid-column: 3 / span 2
+
+Grid Row grid-row: 3 / span 2
+
+Justify Self justify-self: start | end | center | stretch
+
+Align Self align-self: start | end | center | stretch
+ 
+
+10. Dynamic Content
+
+CSS Variable --variable-name: value
+
+Variable Usage var(--variable-name)
+
+Counter Reset counter-reset: name-of-counter
+
+Counter Increment counter-increment: name-of-counter
+
+Counter Dynamic Value content: counter(name-of-counter)
+
+Attribute Dynamic Value content: attr(name-of-attribute)
+
+
+11. Transform Properties
+
+Property         	Description
+transform	        Applies a 2D or 3D transformation to an element
+transform-origin	Sets the origin point of a transformation
+rotate	            Rotates an element around a fixed point
+scale	            Increases or decreases the size of an element
+translate	        Moves an element along the horizontal and/or vertical axis
+skew	            Skews an element along the horizontal and/or vertical axis
+
+
+12. Pseudo-class and Pseudo-element Properties
+
+Property	        Description
+:active	            Sets the styles for an element when it is being activated
+:hover	            Sets the styles for an element when it is being hovered
+:focus	            Sets the styles for an element when it has focus
+:visited	        Sets the styles for a visited link
+:before	            Inserts content before the content of an element
+:after	            Inserts content after the content of an element
+
+
+13. Responsive Design Properties
+
+Property	         Description
+@media	             Sets styles for different screen sizes
+max-width	         Sets the maximum width of an element
+min-width	         Sets the minimum width of an element
+width	             Sets the width of an element
+height	             Sets the height of an element
+max-height           Sets the maximum height of an element
+min-height	         Sets the minimum height of an element
+viewport units       Sets sizes relative to the viewport
+
+
+14. Animation and Transition Properties
+
+Property	                         Description
+animation-name	                     Sets the name of an animation
+animation-duration	                 Sets the length of an animation
+animation-timing-function            Sets the timing of an animation
+animation-delay	                     Sets the delay before an animation starts
+animation-iteration-count	         Sets the number of times an animation should repeat
+animation-direction	                 Sets the direction of an animation
+animation-fill-mode	                 Sets what styles are applied to an element before and after an animation
+animation-play-state                 Sets whether an animation is running or paused
+transition-property                  Sets the CSS property to which a transition should be applied
+transition-duration	                 Sets the length of a transition
+transition-timing-function	         Sets the timing of a transition
+transition-delay	                 Sets the delay before a transition starts

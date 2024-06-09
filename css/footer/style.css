@@ -1,0 +1,91 @@
+/* footer start */
+
+/* footer all item in oneline and backgroubd color  */
+.footer {
+  height: 180px;
+  background-color: #44be9a;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+/* footer logo and name with margin   */
+.footer-logo {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+/* footer logo and name of company in oneline  */
+.footer-logo a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* logo making circular */
+.footer-logo img {
+  display: block;
+  margin: 10px auto;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* This makes the image circular */
+}
+/*company name and logo */
+.footer-logo a span {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+/*link and others items  */
+.footer-quick-links,
+.company-rule-links,
+.company-social-links {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.footer-quick-links h2,
+.company-rule-links h2,
+.company-social-links h2 {
+  color: white;
+}
+
+.footer-quick-links ul,
+.company-rule-links ul,
+.company-social-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-quick-links li,
+.company-rule-links li,
+.company-social-links li {
+  margin: 1px 0;
+}
+
+.footer-quick-links a,
+.company-rule-links a,
+.company-social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-quick-links a:hover,
+.company-rule-links a:hover,
+.company-social-links a:hover {
+  text-decoration: underline;
+}
+
+/* copy right footer */
+.copyright {
+  font-size: 25px;
+  background-color: rgb(65, 150, 65);
+  color: white;
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+/* footer end */

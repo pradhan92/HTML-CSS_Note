@@ -1,0 +1,73 @@
+/* Reset some default styling */
+body,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/* navbar item in oneline and space same(logo[name]/ul items)  */
+.navbar {
+  background-color: green;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* logo items[image of logo] make circle */
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+/* logo item[name of company] */
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+/* spacebetween logo and company name */
+.nav-logo span {
+  margin-left: 20px;
+}
+
+/* only a items hover color*/
+.nav-logo a:hover {
+  color: gold;
+  cursor: pointer;
+}
+/* Pushes the links in oneline [li,a(items)] */
+.links {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 30px;
+  list-style-type: none;
+}
+/* Space between links[li,a items ] */
+.links li {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* decoration of [links -> li -> a] items  */
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* only a items hover color(ul->links->li->a->) */
+.links a:hover {
+  color: gold;
+}
